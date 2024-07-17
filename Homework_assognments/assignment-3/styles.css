@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcc00; /* Bright color background */
+    margin: 0;
+}
+
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.clock-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hour-hand,
+.minute-hand {
+    position: center;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: 100% 100%;
+}
+
+.hour-hand {
+    animation: rotateHourHand 10s linear infinite;
+}
+
+.minute-hand {
+    animation: rotateMinuteHand 10s linear infinite;
+}
+
+@keyframes rotateHourHand {
+    from {
+        transform: rotate(90deg); /* 3:00pm */
+    }
+    to {
+        transform: rotate(120deg); /* 4:00pm */
+    }
+}
+
+@keyframes rotateMinuteHand {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

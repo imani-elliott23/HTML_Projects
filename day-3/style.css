@@ -1,0 +1,16 @@
+h1{
+
+background-color: blue;
+    color: orange;
+    font-style: italic;
+    width:300px;
+    font-weight: bold;
+    font-size: 34px;
+
+    border:4px dotted pink;
+    border-radius: 15%;
+    /* 'float:;' change the behavior so that the block elemen won't take up all the space. 
+    both the h1 will be on the same page */ 
+
+    float: left;
+}

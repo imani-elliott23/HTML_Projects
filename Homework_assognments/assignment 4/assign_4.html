@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet_assign4.css">
+    <title>Responsive Photo Gallery</title>
+</head>
+<body>
+    
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Image 1">
+            <a href="#modal1" class="open-modal">Open Modal One</a>
+        </div>
+        <div class="gallery-item">
+            <img src="BG_roses .jpeg" alt="Image 2">
+            <a href="#modal2" class="open-modal">Open Modal Two</a>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content" style="background-color: rgba(0, 0, 255, 0.5);">
+            <a href="#" class="close">&times;</a>
+            <h2>Modal Window One</h2>
+            <img src="rose-images-yel.jpeg" alt="Image 1" class="modal-image">
+            <p>This is the description for the first image.</p>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content" style="background-color: rgba(0, 255, 0, 0.5);">
+            <a href="#" class="close">&times;</a>
+            <h2>Modal Window Two</h2>
+            <img src="BG_roses .jpeg" alt="Image 2" class="modal-image">
+            <p>This is the description for the second image.</p>
+        </div>
+    </div>
+</body>
+</html>
