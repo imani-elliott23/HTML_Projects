@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with animated icon and titles -->
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="animated-icon">
+            <h1 class="animated-title">Welcome to Our Store</h1>
+            <h2 class="animated-subtitle">Best Deals of the Season</h2>
+        </div>
+    </header>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="gift_set2.png" alt="THE RITUAL OF SAKURA">
+                <div class="text"><strong>THE RITUAL OF SAKURA</strong></div>
+            </div>
+            <div class="slide fade">
+                <img src="item3.png" alt="THE RITUAL OF AYURVEDA">
+                <div class="text"><strong>THE RITUAL OF AYURVEDA</strong></div>
+            </div>
+            <div class="slide fade">
+                <img src="item1.png" alt="THE RITUAL OF SAKURA">
+                <div class="text"><strong>THE RITUAL OF SAKURA</strong></div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product">
+            <img src="item1.png" alt="THE RITUAL OF SAKURA">
+            <h3>THE RITUAL OF SAKURA</h3>
+            <p>$7.50</p>
+            <button class="add-to-bag" onclick="openModal('THE RITUAL OF SAKURA', 7.50)">
+                ADD TO BAG
+                <span class="tooltip">Add to Shopping Cart</span>
+            </button>
+        </div>
+        <div class="product">
+            <img src="item2.png" alt="THE RITUAL OF AYURVEDA">
+            <h3>THE RITUAL OF AYURVEDA</h3>
+            <p>$7.50</p>
+            <button class="add-to-bag" onclick="openModal('THE RITUAL OF AYURVEDA', 7.50)">
+                ADD TO BAG
+                <span class="tooltip">Add to Shopping Cart</span>
+            </button>
+        </div>
+        <div class="product">
+            <img src="item3.png" alt="THE RITUAL OF SAKURA">
+            <h3>THE RITUAL OF SAKURA</h3>
+            <p>$7.50</p>
+            <button class="add-to-bag" onclick="openModal('THE RITUAL OF SAKURA', 7.50)">
+                ADD TO BAG
+                <span class="tooltip">Add to Shopping Cart</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Gift Set Section -->
+    <section class="products">
+        <div class="product">
+            <img src="gift_set1.png" alt="REBALANCING RITUAL GIFT SET">
+            <h3>REBALANCING RITUAL GIFT SET</h3>
+            <p>$37.50</p>
+            <button class="add-to-bag" onclick="openModal('REBALANCING RITUAL GIFT SET', 37.50)">
+                ADD TO BAG
+                <span class="tooltip">Add to Shopping Cart</span>
+            </button>
+        </div>
+        <div class="product">
+            <img src="gift_set2.png" alt="RENEWING TREAT GIFT SET">
+            <h3>RENEWING TREAT GIFT SET</h3>
+            <p>$26.00</p>
+            <button class="add-to-bag" onclick="openModal('RENEWING TREAT GIFT SET', 26.00)">
+                ADD TO BAG
+                <span class="tooltip">Add to Shopping Cart</span>
+            </button>
+        </div>
+        <div class="product">
+            <img src="gift_set3.png" alt="SOOTHING RITUAL GIFT SET">
+            <h3>SOOTHING RITUAL GIFT SET</h3>
+            <p>$37.50</p>
+            <button class="add-to-bag" onclick="openModal('SOOTHING RITUAL GIFT SET', 37.50)">
+                ADD TO BAG
+                <span class="tooltip">Add to Shopping Cart</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal Window -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Product">
+                <div class="modal-text">
+                    <p>It's in the bag!</p>
+                    <p id="modal-title"></p>
+                    <p id="modal-price"></p>
+                    <p>Mix & Match: 3/$20 </p>
+                    <hr>
+                    <h6>Harmonise body, mind and soul with this luxurious body cream</h6>
+                    <button class="continue-shopping">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>HELP</h4>
+                <!-- Footer content here -->
+            </div>
+            <div class="footer-section">
+                <h4>ACCOUNT</h4>
+                <!-- Footer content here -->
+            </div>
+            <div class="footer-section">
+                <h4>SUBSCRIBE</h4>
+                <!-- Footer content here -->
+            </div>
+            <div class="footer-section">
+                <h4>THE MEMBER CARE</h4>
+                <!-- Footer content here -->
+            </div>
+            <div class="social-media-links">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">IG</a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">FB</a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">YOUTUBE</a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">PINTEREST</a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">TWITTER</a>
+            </div>
+        </div>
+        <p>Jessiel Dela Cruz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
